@@ -20,7 +20,7 @@ MATLAB R2018b or later is recommended. Some MATLAB Toolboxes may be required dep
 
 ### Can I run the model on Windows?
 
-Rift2Ridge is primarily tested on Linux and macOS. Running on Windows is not supported and may require substantial modifications to shell scripts and path handling.
+Yes, though Rift2Ridge is primarily tested on Linux and macOS. Running on Windows may require substantial modifications to shell scripts and path handling.
 
 ---
 
