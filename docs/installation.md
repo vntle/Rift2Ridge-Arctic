@@ -14,7 +14,7 @@ This page describes how to set up the environment required to run Rift2Ridge-Arc
 
 ## 1. Install MATLAB
 
-Install MATLAB R2018b or later. Ensure the `matlab` binary is on your `PATH`.
+Install MATLAB R2018b or later. Important: tick all toolboxes except Aerospace, Simulink, Remote controlling tooboxes. Ensure the `matlab` binary is on your `PATH`.
 
 ## 2. Install Python 3
 
