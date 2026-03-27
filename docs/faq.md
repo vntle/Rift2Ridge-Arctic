@@ -39,6 +39,13 @@ Then reload your shell: `source ~/.bash_profile`.
 
 ### MATLAB cannot find the `mutils` functions.
 
+If you copied the `mutils` folder from another researcher's computer, the `.mexw64` binaries will not match your CPU/MATLAB version.
+
+* 📂 **Step 1:** Navigate to the `mutils/MATLAB` directory in your MATLAB Current Folder.
+
+* ⚙️ **Step 2:** Type `mutils_setup` in the Command Window to recompile the C-code specifically for your machine using the MinGW compiler.
+
+* 🔗 **Step 3:** Ensure the folder is permanently added to your path: `addpath(genpath(getenv('MUTILS_PATH'))); savepath;`.
 Check that `MUTILS_PATH` is set and that `mutils` has been compiled and added to MATLAB's path. Inside MATLAB, run:
 
 ```matlab
@@ -80,6 +87,7 @@ Yes. Each case lives in its own `nnn` folder and writes output to a separate dir
 
 ### How do I continue a stopped run?
 
+If there is an error that stop you from running, you can uncomment the line in  `call_main.m` to make it continue with the output file.
 Copy the input folder to a new `nnn` subdirectory, then edit `update_model.m` to specify the restart `.mat` file and update any paths for the new machine or queue. Launch from the new folder.
 
 ---
